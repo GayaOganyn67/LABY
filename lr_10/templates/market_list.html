@@ -1,0 +1,36 @@
+
+{% extends 'base.html' %}
+
+{% block title %}Приветсвие{% endblock %}
+
+{% block content %}
+    <div class="container my-5">
+        <h1 class="text-center mb-4"> Товары на складе</h1>
+
+        <table>
+        <thead>
+            <tr>
+            <th scope="col">Наименование</th>
+            <th scope="col">Описание</th>
+            <th scope="col">Вес 1 единицы</th>
+            <th scope="col">Количество</th>
+            <th scope="col">Цена поставщика</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for item in items %}
+            <tr>
+            <th scope="row">"{{ item[0] }}"</th>
+            <td>{{ item[1] }}</td>
+            <td>{{ item[2] }}</td>
+            <td>{{ item[3] }}</td>
+            <td>{{ item[4] }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+        </table>
+    </div>
+    <button onclick="location.href='../market_add/'" type="button">
+        Добавить товар</button>
+
+{% endblock %}

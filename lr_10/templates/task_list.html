@@ -1,0 +1,20 @@
+
+{% extends 'base.html' %}
+
+{% block title %}Приветсвие{% endblock %}
+
+{% block content %}
+    <div class="container my-5">
+        <h1 class="text-center mb-4">Список задач</h1>
+        {% for task in tasks %}
+        <div class="col-md-3">
+        <div class="card mb-3">
+            <div class="card-body">
+                <p class="card-text">{{ task }}</p>
+            </div>
+        </div>
+        </div>
+    {% endfor %}
+    </div>
+
+{% endblock %}

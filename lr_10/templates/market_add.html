@@ -1,0 +1,49 @@
+
+{% extends 'base.html' %}
+
+{% block title %}Приветсвие{% endblock %}
+
+{% block content %}
+<div class="col-md-6">
+    <div class="card">
+      <div class="card-header">
+        <h1 class="text-center">Добавление товара</h1>
+      </div>
+      <div class="card-body">
+        <form method="post">
+          <div class="mb-3">
+            <label for="new_name" class="form-label">Наименование:</label>
+            <input type="text" class="form-control" id="new_name" name="new_name" required>
+          </div>
+          
+          <div class="mb-3">
+            <label for="new_desc" class="form-label">Описание:</label>
+            <input type="text" class="form-control" id="new_desc" name="new_desc" required>
+          </div>
+          
+          <div class="mb-3">
+            <label for="new_weight" class="form-label">Вес 1 единицы:</label>
+            <input type="text" class="form-control" id="new_weight" name="new_weight" required>
+          </div>
+
+          <div class="mb-3">
+            <label for="new_count" class="form-label">Количество:</label>
+            <input type="text" class="form-control" id="new_count" name="new_count" required>
+          </div>
+          
+          <div class="mb-3">
+            <label for="new_price" class="form-label">Цена поставщика:</label>
+            <input type="text" class="form-control" id="new_price" name="new_price" required>
+          </div>
+          <div class="text-center">
+            <button type="submit" class="btn btn-primary">Сохранить товар</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <button onclick="location.href='../market_list/'" type="button">
+    Назад</button>
+
+{% endblock %}

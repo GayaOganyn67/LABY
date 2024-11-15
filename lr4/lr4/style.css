@@ -1,0 +1,67 @@
+body {
+    font:
+    1em/150% Helvetica,
+    Arial,
+    sans-serif;
+  padding: 1em;
+  margin: 0 auto;
+  max-width: 33em;
+    background-color: rgb(128, 30, 119);
+  }
+
+  .photo {
+    margin: auto;
+    text-align: center;
+  }
+/* фотка */
+
+  #name {
+    text-shadow:
+  1px 1px 1px rgb(128, 30, 119),
+  2px 2px 1px rgb(229, 245, 7);
+  text-align: center;
+  }
+/* имя  */
+
+.skills {
+    color:rgb(128, 30, 119);
+    font-weight: bold;
+    text-align: center;
+    border: 1px solid rgb(128, 30, 119);
+  background-color: rgb(229, 245, 7); 
+}
+/* навыки */
+
+.contacs {
+    color:rgb(1, 21, 1);
+    font-weight: bold;
+    text-align: center;
+    border: 1px solid rgb(128, 30, 119);
+  background-color: rgb(229, 245, 7);             
+}
+/* контакты */
+
+li {
+    list-style-type: none;
+}
+
+.center {
+    text-align: center;
+}
+
+@media (min-width: 70em) {
+    body {
+      font-size: 130%;
+    }
+  }
+  
+  h1 {
+    font-size: 1.5em;
+  }
+  
+  ul,
+ol,
+dl,
+p {
+  font-size: 1.5rem;
+}
